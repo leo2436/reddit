@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nodemon dist/index.js",
     "watch": "tsc -w",
-    "start": "node dist/index.js",
-    "create:migration": "mikro-orm migration:create"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,10 +21,6 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "@mikro-orm/cli": "^4.0.0-alpha.0",
-    "@mikro-orm/core": "^4.0.0-alpha.0",
-    "@mikro-orm/migrations": "^4.0.0-alpha.0",
-    "@mikro-orm/postgresql": "^4.0.0-alpha.0",
     "@types/connect-redis": "0.0.14",
     "@types/cors": "^2.8.7",
     "@types/express-session": "^1.17.0",
@@ -46,6 +41,7 @@
     "redis": "^3.0.2",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.0.0",
+    "typeorm": "^0.2.26",
     "uuid": "^8.3.0"
   },
   "mikro-orm": {
